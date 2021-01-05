@@ -41,6 +41,9 @@ class LinkdeList:
     return restr  
 
 def reverseLinkedList(ls):
+  if ls is None:
+    return None
+     
   returnls = LinkdeList()
   temp = ls.head
   while temp:
