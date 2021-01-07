@@ -68,14 +68,16 @@ class Main {
   static int nthtolastLinkedListElement(Node n, int x){
     Node currnet = n;
     Node follower = n;
-    for (int i = 0;i < x;i++){
+    for (int i = 1;i < x;i++){
+      if(currnet == null) return -1;
       currnet = currnet.next;
     }
     while(currnet.next != null){
+      currnet = currnet.next;
       follower = follower.next;
     }
 
-    return follower;
+    return follower.data;
   }
   
   public static void main(String[] args) {
