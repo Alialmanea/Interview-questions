@@ -23,7 +23,7 @@ class Result {
         for(int i = 0; i < steps; i++){
             if(path.charAt(i) == 'U'){
                 j++;
-                if(j == -1)
+                if(j == 0)
                    result++; 
             }
             if(path.charAt(i) == 'D')
